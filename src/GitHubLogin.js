@@ -68,8 +68,12 @@ class GitHubLogin extends Component {
     if (className) {
       attrs.className = className;
     }
-
-    return <button {...attrs}>{ children || buttonText }</button>;
+    return (
+      <button {...attrs}>
+        {children}
+        {buttonText}
+      </button>
+    )
   }
 }
 
